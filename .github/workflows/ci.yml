@@ -6,9 +6,9 @@
 #       - main
 #       - master
 
-# jobs:
-#   build-and-test:
-#     runs-on: ubuntu-latest
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
 
 #     steps:
 #       - name: "Setup Node JS"
@@ -37,9 +37,9 @@
 #       - name: "Run Build"
 #         run: npm run build
 
-#       - name: "Upload product-ready build files"
-#         uses: actions/upload-artifact@v4
-#         with:
-#           name: build
-#           path: dist
+      - name: "Upload product-ready build files"
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: dist
   
